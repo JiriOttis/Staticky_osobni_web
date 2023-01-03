@@ -1,0 +1,579 @@
+@import url("https://fonts.googleapis.com/css2?family=Mogra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-color: black;
+  font-family: "Inter", sans-serif;
+}
+.container {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+header {
+  background: rgb(53, 255, 105);
+  font-family: "Mogra", cursive;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100px;
+  position: relative;
+  z-index: 10;
+}
+header h1 {
+  height: 60px;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 60px;
+}
+
+.polozky {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+.polozky li {
+  list-style: none;
+}
+.polozky li a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.polozky li a:hover {
+  color: white;
+}
+.menu {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 30%;
+  color: black;
+  font-size: 30px;
+}
+#menu-toogle {
+  position: absolute;
+  top: -100px;
+}
+.introduction {
+  max-width: 100%;
+  height: 500px;
+  background-image: url(Fotky/homepage_compresed.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  text-align: center;
+  position: relative;
+}
+
+.tlacitko {
+  position: relative;
+  top: 80%;
+  padding: 20px 100px;
+  border-radius: 14px;
+  border-style: none;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: "Mogra", cursive;
+  background: rgb(53, 255, 105);
+  color: black;
+  text-decoration: none;
+}
+.tlacitko:hover {
+  color: white;
+  background-color: black;
+}
+
+.contacts {
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  background-color: black;
+  width: 60px;
+}
+.contacts ul li {
+  list-style: none;
+  padding: 5px 0px;
+}
+.contacts a {
+  font-size: 32px;
+  color: white;
+  transition: 0.3s;
+}
+#facebook:hover {
+  color: #1877f2;
+  font-size: 35px;
+}
+#insta:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  color: transparent;
+  font-size: 35px;
+}
+#twitter:hover {
+  color: #1877f2;
+  font-size: 35px;
+}
+#mail:hover {
+  color: #ff0000;
+  font-size: 35px;
+}
+#spotify:hover {
+  color: #1ed760;
+  font-size: 35px;
+}
+
+.welcome {
+  height: 90px;
+  text-align: center;
+  position: relative;
+}
+.welcome p {
+  position: relative;
+  color: white;
+  font-family: "Inter", sans-serif;
+  top: 20px;
+  font-size: 30px;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  width: 100%;
+  height: auto;
+}
+.box {
+  background: rgb(53, 255, 105);
+  height: 400px;
+  width: 670px;
+  margin: 15px;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  z-index: 0;
+  background-size: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.box h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  margin: 10px;
+  background: rgba(119, 118, 118, 0.295);
+  width: 50%;
+}
+.box:hover {
+  border: 2px solid white;
+  box-sizing: content-box;
+  background-size: cover;
+}
+.box p {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  margin: 10px;
+  background: rgba(119, 118, 118, 0.295);
+}
+.box img {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+#oMne {
+  background-image: url(Fotky/o_mne.jpg);
+}
+#hobby {
+  background-image: url(Fotky/hobby.jpg);
+}
+#vzdelani {
+  background-image: url(Fotky/vzdelani.jpg);
+}
+
+#cestovani {
+  background-image: url(Fotky/Traveling.jpeg);
+}
+footer {
+  color: rgba(128, 128, 128, 0.664);
+  font-size: 18px;
+  text-align: center;
+  padding-top: 20px;
+}
+.nadpis {
+  color: white;
+  margin: 50px 60px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-size: 90px;
+  align-items: center;
+}
+.text {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.text p {
+  width: 50%;
+}
+.text img {
+  margin: 20px;
+}
+.hobby_photo {
+  width: 25%;
+  height: auto;
+}
+.photobox {
+  width: 450px;
+  height: 630px;
+  position: relative;
+  display: inline-block;
+  margin-top: 40px;
+}
+.photobox img {
+  margin: 0;
+}
+#foto_o_mne2 {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.photobox:hover #foto_o_mne2 {
+  visibility: visible;
+}
+
+.seznam {
+  color: white;
+  font-family: "Inter", sans-serif;
+  margin: 30px 60px;
+}
+
+.seznam h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.seznam ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.delsiText {
+  color: white;
+  font-family: "Inter", sans-serif;
+  padding-left: 60px;
+  margin-top: 60px;
+}
+
+.delsiText h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.delsiText p {
+  font-size: 20px;
+  width: 75%;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.delsiText .seznam {
+  margin-left: 0px;
+}
+#hobby_text {
+  width: 80%;
+  margin-bottom: 60px;
+}
+.video {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.video iframe {
+  margin-top: 40px;
+  border: none;
+}
+
+p a {
+  font-weight: bold;
+  color: rgb(83, 255, 126);
+  text-decoration: none;
+}
+p a:hover {
+  text-decoration: underline;
+}
+.cestovani {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  flex-wrap: wrap;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  background: rgb(53, 255, 105);
+}
+.cestovani p {
+  margin: 40px 20px;
+}
+.tlacitko_cestovani {
+  padding: 20px 100px;
+  border: 5px solid black;
+  border-radius: 14px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: "Mogra", cursive;
+  background: rgb(53, 255, 105);
+  color: black;
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+.tlacitko_cestovani:hover {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
+.fotografie {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+}
+.fotografie img {
+  padding: 20px;
+  max-width: 50%;
+  min-width: 100px;
+  height: auto;
+  flex: auto;
+  align-self: flex-start; /* opravuje chybné zobrazení obrázků v Safari*/
+}
+.timeline {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.timeline ul li {
+  list-style: none;
+  padding: 10px;
+}
+.timeline h2 {
+  margin-top: 20px;
+}
+@media screen and (max-width: 1400px) {
+  .box {
+    width: 40%;
+  }
+  .text p {
+    width: 90%;
+  }
+  .hobby_photo {
+    width: 40%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 960px) {
+  header ul {
+    width: 80%;
+  }
+  .box {
+    width: 80%;
+  }
+  .fotografie img {
+    padding: 10px 10%;
+    max-width: 100%;
+    height: auto;
+  }
+  .polozky {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(53, 255, 105, 0.8);
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+  }
+  .polozky li a {
+    font-size: 50px;
+  }
+  header :checked ~ .polozky {
+    bottom: 0;
+  }
+  .menu {
+    display: block;
+    z-index: 9;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .delsiText p {
+    width: 90%;
+  }
+  .nadpis {
+    font-size: 85px;
+  }
+  .cestovani {
+    text-align: center;
+  }
+  header a {
+    font-size: 50px;
+  }
+  header h1 {
+    height: 50px;
+  }
+  header {
+    min-height: 80px;
+  }
+  iframe {
+    width: 512px;
+    height: 288px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .text img {
+    width: 80%;
+    height: auto;
+  }
+  .photobox {
+    width: 70%;
+    height: auto;
+  }
+  .photobox img {
+    width: 100%;
+    height: auto;
+  }
+  .box {
+    width: 100%;
+  }
+  .fotografie img {
+    padding: 10px 0px;
+    max-width: 100%;
+    height: auto;
+  }
+  .nadpis {
+    margin: 25px 30px;
+    font-size: 60px;
+  }
+  .tlacitko {
+    position: relative;
+    top: 80%;
+    padding: 20px 100px;
+    border-radius: 14px;
+    border-style: none;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: "Mogra", cursive;
+    background: rgb(53, 255, 105);
+    color: black;
+    text-decoration: none;
+  }
+  .tlacitko {
+    padding: 20px 60px;
+    font-size: 35px;
+  }
+  .tlacitko_cestovani {
+    padding: 20px 60px;
+    font-size: 35px;
+  }
+  iframe {
+    width: 368px;
+    height: 207px;
+  }
+}
+
+@media print {
+  p a {
+    font-weight: normal;
+  }
+  .polozky {
+    display: none;
+  }
+  .text {
+    display: block;
+  }
+  .text p {
+    width: 100%;
+  }
+
+  img {
+    width: 50%;
+    height: auto;
+    page-break-inside: avoid;
+    page-break-after: auto;
+    page-break-before: auto;
+  }
+  .hobby_photo {
+    width: 40%;
+    height: auto;
+  }
+  iframe {
+    display: none;
+  }
+  .nadpis {
+    font-size: 30px;
+  }
+  #foto_o_mne2 {
+    display: none;
+  }
+  .photobox {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  .tlacitko_cestovani {
+    display: none;
+  }
+  .fotografie {
+    display: block;
+    max-width: 100%;
+  }
+  .fotografie img {
+    float: left;
+    width: 50%;
+    padding: 2px 0px;
+  }
+  .introduction {
+    display: none;
+  }
+  .box {
+    height: auto;
+  }
+  .box img {
+    display: none;
+  }
+}
